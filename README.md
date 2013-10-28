@@ -1,6 +1,12 @@
 git
 ===
 
+### Remove remote branch
+
+    git push origin :branchname
+    
+src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html)
+
 ### Remove stale tracking branches
 
     git remote prune origin
