@@ -1,6 +1,13 @@
 git
 ===
 
+### Open pull request from command line (with [`hub`](http://hub.github.com/))
+
+    git co -b newstuff
+    git ci -m 'Add new stuff'
+    git push -u origin newstuff
+    hub pull-request
+
 ### Remove remote branch
 
     git push origin :branchname
