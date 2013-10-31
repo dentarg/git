@@ -15,6 +15,20 @@ git
     hub merge https://github.com/user/zambezi/pull/11
     git push
 
+src: [man hub](http://hub.github.com/hub.1.html)
+
+### Undo last commit and keep the changes
+
+    git reset --soft HEAD^
+
+src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-commit/)
+
+### Delete the last commit (does NOT keep the changes)
+
+    git reset --hard HEAD^
+    
+src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-commit/)
+
 ### Remove remote branch
 
     git push origin :branchname
