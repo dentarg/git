@@ -7,6 +7,13 @@ git
     git ci -m 'Add new stuff'
     git push -u origin newstuff
     hub pull-request
+    
+    
+### Merge pull request from command line (with `hub`)
+
+    git co master
+    hub merge https://github.com/user/zambezi/pull/11
+    git push
 
 ### Remove remote branch
 
