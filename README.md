@@ -8,6 +8,13 @@ git
     git push -u origin newstuff
     hub pull-request
     
+#### Convert existing issue to a pull request:
+
+    hub pull-request -i <issue number>
+
+Note: You need to be the creator of the issue.
+
+src: [How do you attach a new pull request to an existing issue on github?](http://stackoverflow.com/questions/4528869/how-do-you-attach-a-new-pull-request-to-an-existing-issue-on-github)
     
 ### Merge pull request from command line (with `hub`)
 
