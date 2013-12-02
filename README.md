@@ -36,6 +36,17 @@ src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-comm
     
 src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-commit/)
 
+### Reset master to origin/master
+
+    git co master
+
+    # optional backup
+    git branch previous_master
+
+    git reset --hard origin/master
+
+src: [How to reset master to origin/master?](http://superuser.com/questions/273172/how-to-reset-master-to-origin-master)
+
 ### Remove remote branch
 
     git push origin :branchname
