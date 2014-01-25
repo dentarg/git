@@ -1,6 +1,14 @@
 git
 ===
 
+### Change commit messages of past commits
+
+    git rebase -i <commit before the first you want to edit>
+
+Replace "pick" with "reword" for the commits you want to edit the message of. `$EDITOR` will open automatically until there's no more commit messages to edit.
+
+src: [Change old commit message on Git](http://stackoverflow.com/questions/1884474/change-old-commit-message-on-git), [Change commit messages of past Git commits](http://makandracards.com/makandra/868-change-commit-messages-of-past-git-commits)
+
 ### Open pull request from command line (with [`hub`](http://hub.github.com/))
 
     git co -b newstuff
