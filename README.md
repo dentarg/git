@@ -72,13 +72,13 @@ Example:
       remotes/origin/coolbranch
       remotes/origin/master
 
-src: [Tracking Branches](http://git-scm.com/book/en/Git-Branching-Remote-Branches#Tracking-Branches)
+src: [Tracking Branches](http://git-scm.com/book/en/Git-Branching-Remote-Branches#Tracking-Branches), [`git-checkout(1)`](http://git-scm.com/docs/git-checkout)
 
 ### Remove remote branch
 
     git push origin :branchname
     
-src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html), [`git-checkout(1)`](http://git-scm.com/docs/git-checkout)
+src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html)
 
 ### Remove stale tracking branches
 
