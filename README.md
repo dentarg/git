@@ -55,11 +55,30 @@ src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-comm
 
 src: [How to reset master to origin/master?](http://superuser.com/questions/273172/how-to-reset-master-to-origin-master)
 
+### Tracking Branches
+
+    git co -t origin/<new_branch>
+
+Example:
+
+    $ git branch -a
+    * master
+      remotes/origin/coolbranch
+      remotes/origin/master
+    $ git co -t origin/coolbranch
+    $ git branch -a
+      master
+    * coolbranch
+      remotes/origin/coolbranch
+      remotes/origin/master
+
+src: [Tracking Branches](http://git-scm.com/book/en/Git-Branching-Remote-Branches#Tracking-Branches)
+
 ### Remove remote branch
 
     git push origin :branchname
     
-src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html)
+src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html), [`git-checkout(1)`](http://git-scm.com/docs/git-checkout)
 
 ### Remove stale tracking branches
 
