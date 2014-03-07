@@ -55,6 +55,23 @@ src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-comm
 
 src: [How to reset master to origin/master?](http://superuser.com/questions/273172/how-to-reset-master-to-origin-master)
 
+### Selective `git stash`
+
+> You can use git stash save --keep-index when you want to make two or more commits out of the changes in the work tree, and you want to test each change
+before committing:
+
+    # ... hack hack hack ...
+    $ git add --patch foo            # add just first part to the index
+    $ git stash save --keep-index    # save all other changes to the stash
+    $ edit/build/test first part
+    $ git commit -m 'First part'     # commit fully tested change
+    $ git stash pop                  # prepare to work on all other changes
+    # ... repeat above five steps until one commit remains ...
+    $ edit/build/test remaining parts
+    $ git commit foo -m 'Remaining parts'
+
+src: [`git-stash(1)`](http://git-scm.com/docs/git-stash)
+
 ### Tracking Branches
 
     git co -t origin/<new_branch>
