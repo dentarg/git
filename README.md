@@ -55,6 +55,12 @@ src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-comm
 
 src: [How to reset master to origin/master?](http://superuser.com/questions/273172/how-to-reset-master-to-origin-master)
 
+### Search in history
+
+    git log -p -S search_string
+    
+src: [git-log(1) Manual Page](http://git-scm.com/docs/git-log)
+
 ### Selective `git stash`
 
 > You can use git stash save --keep-index when you want to make two or more commits out of the changes in the work tree, and you want to test each change
