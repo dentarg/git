@@ -44,6 +44,12 @@ src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-comm
     
 src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-commit/)
 
+### Push arbitrary branch to origin/master
+
+    git push origin my-feature-branch:master
+    
+Useful when working with i.e. Heroku where the master branch gets deployed on push.
+
 ### Reset master to origin/master
 
     git co master
