@@ -15,7 +15,7 @@ src: [Change old commit message on Git](http://stackoverflow.com/questions/18844
     git ci -m 'Add new stuff'
     git push -u origin newstuff
     hub pull-request
-    
+
 #### Convert existing issue to a pull request:
 
     hub pull-request -i <issue number>
@@ -23,7 +23,7 @@ src: [Change old commit message on Git](http://stackoverflow.com/questions/18844
 Note: You need to be the creator of the issue.
 
 src: [How do you attach a new pull request to an existing issue on github?](http://stackoverflow.com/questions/4528869/how-do-you-attach-a-new-pull-request-to-an-existing-issue-on-github)
-    
+
 ### Merge pull request from command line (with `hub`)
 
     git co master
@@ -41,13 +41,42 @@ src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-comm
 ### Delete the last commit (does NOT keep the changes)
 
     git reset --hard HEAD^
-    
+
 src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-commit/)
+
+### Patches
+
+Create patch file for a commit
+
+    $ git format-patch -1 c460a1a324571b30ef2a6f4373be053c1ead2066
+    0001-Push-arbitrary-branch-to-origin-master.patch
+
+Check if you can apply the patch
+
+    $ git apply --check 0001-Push-arbitrary-branch-to-origin-master.patch
+
+Apply the diff, but don't commit
+
+    $ git apply 0001-Push-arbitrary-branch-to-origin-master.patch
+
+Apply the diff and make a commit
+
+    $ git am < 0001-Push-arbitrary-branch-to-origin-master.patch
+
+If someone else wrote the patch
+
+    $ git am --signoff < 0001-Push-arbitrary-branch-to-origin-master.patch
+
+Can be handy to be able to ignore whitespace
+
+    $ git apply --ignore-space-change --ignore-whitespace < 0001-Push-arbitrary-branch-to-origin-master.patch
+
+src: [How to create and apply a patch with Git](https://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/), [git: patch does not apply](http://stackoverflow.com/questions/4770177/git-patch-does-not-apply)
 
 ### Push arbitrary branch to origin/master
 
     git push origin my-feature-branch:master
-    
+
 Useful when working with i.e. Heroku where the master branch gets deployed on push.
 
 ### Reset master to origin/master
@@ -64,7 +93,7 @@ src: [How to reset master to origin/master?](http://superuser.com/questions/2731
 ### Search in history
 
     git log -p -S search_string
-    
+
 src: [git-log(1) Manual Page](http://git-scm.com/docs/git-log)
 
 ### Selective `git stash`
@@ -106,15 +135,15 @@ src: [Tracking Branches](http://git-scm.com/book/en/Git-Branching-Remote-Branche
 ### Remove remote branch
 
     git push origin :branchname
-    
+
 src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html)
 
 ### Remove stale tracking branches
 
     git remote prune origin
-    
+
 `--dry-run` is handy if you're unsure what's going to happen:
-    
+
     git remote prune --dry-run origin
 
 src: [How do you Remove an Invalid Remote Branch Reference from Git?](http://stackoverflow.com/questions/1072171/how-do-you-remove-an-invalid-remote-branch-reference-from-git)
