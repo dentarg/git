@@ -138,6 +138,13 @@ src: [Tracking Branches](http://git-scm.com/book/en/Git-Branching-Remote-Branche
 
 src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/push-and-delete-branches.html)
 
+### Remove remote tag
+
+   git tag -d mytag
+   git push origin :refs/tags/mytag
+
+src: [How to: Delete a remote Git tag](https://nathanhoad.net/how-to-delete-a-remote-git-tag)
+
 ### Remove stale tracking branches
 
     git remote prune origin
