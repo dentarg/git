@@ -140,8 +140,8 @@ src: [push and delete remote branches](http://gitready.com/beginner/2009/02/02/p
 
 ### Remove remote tag
 
-   git tag -d mytag
-   git push origin :refs/tags/mytag
+    git tag -d mytag
+    git push origin :refs/tags/mytag
 
 src: [How to: Delete a remote Git tag](https://nathanhoad.net/how-to-delete-a-remote-git-tag)
 
