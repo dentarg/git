@@ -9,6 +9,12 @@ Replace "pick" with "reword" for the commits you want to edit the message of. `$
 
 src: [Change old commit message on Git](http://stackoverflow.com/questions/1884474/change-old-commit-message-on-git), [Change commit messages of past Git commits](http://makandracards.com/makandra/868-change-commit-messages-of-past-git-commits)
 
+### Open commit from command line (with [`hub`](http://hub.github.com/))
+
+    hub browse -- commit/46109ccf
+    
+src: [hub browse: improve support for opening a commit](https://github.com/github/hub/issues/516)
+
 ### Open pull request from command line (with [`hub`](http://hub.github.com/))
 
     git co -b newstuff
