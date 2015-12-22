@@ -50,6 +50,12 @@ src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-comm
 
 src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-commit/)
 
+### Start a git commit message with a hashmark (`#`)
+
+    git commit --cleanup=whitespace
+
+src: [Start a git commit message with a hashmark (`#`)](http://stackoverflow.com/questions/2788092/start-a-git-commit-message-with-a-hashmark)
+
 ### Patches
 
 Create patch file for a commit
