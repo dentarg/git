@@ -44,6 +44,14 @@ src: [man hub](http://hub.github.com/hub.1.html)
 
 src: [Git Delete Last Commit](http://nakkaya.com/2009/09/24/git-delete-last-commit/)
 
+### Undo N last commits and keep the changes
+
+N=3:
+
+    git reset --soft HEAD~3
+
+src: [Squash my last X commits together using Git](http://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git/5201642#5201642)
+
 ### Delete the last commit (does NOT keep the changes)
 
     git reset --hard HEAD^
