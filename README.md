@@ -9,6 +9,20 @@ Replace "pick" with "reword" for the commits you want to edit the message of. `$
 
 src: [Change old commit message on Git](http://stackoverflow.com/questions/1884474/change-old-commit-message-on-git), [Change commit messages of past Git commits](http://makandracards.com/makandra/868-change-commit-messages-of-past-git-commits)
 
+### Change tag annotation message
+
+    # Fixing tag named '1.0.1'
+    git checkout 1.0.1               # Go to the associated commit
+    git tag -d 1.0.1                 # Locally delete the tag
+    git push origin :refs/tags/1.0.1 # Push this deletion up to GitHub
+
+    # Create the tag, with a date derived from the current head
+    GIT_COMMITTER_DATE="$(git show --format=%aD | head -1)" git tag -a 1.0.1 -m"v1.0.1"
+
+    git push --tags                  # Send the fixed tags to GitHub
+
+src: [How do I edit an existing tag message in git?](http://stackoverflow.com/a/29019547/525616), [Change date of git tag (or GitHub Release based on it)](http://stackoverflow.com/a/21741848/525616)
+
 ### Open commit from command line (with [`hub`](http://hub.github.com/))
 
     hub browse -- commit/46109ccf
