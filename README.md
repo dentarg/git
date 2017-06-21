@@ -1,6 +1,12 @@
 git
 ===
 
+### Ignore whitespace when comparing lines
+
+    git diff -w
+
+src: https://git-scm.com/docs/git-diff#git-diff--w
+
 ### Change commit messages of past commits
 
     git rebase -i <commit before the first you want to edit>
