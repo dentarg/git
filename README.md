@@ -194,3 +194,15 @@ src: [How to: Delete a remote Git tag](https://nathanhoad.net/how-to-delete-a-re
     git remote prune --dry-run origin
 
 src: [How do you Remove an Invalid Remote Branch Reference from Git?](http://stackoverflow.com/questions/1072171/how-do-you-remove-an-invalid-remote-branch-reference-from-git)
+
+### Remove untracked files
+
+Dry run, show what would be done:
+
+    git clean -n
+
+Remove untracked directories in addition to untracked files:
+
+    git clean -d
+
+src: [`git-clean`](https://git-scm.com/docs/git-clean)
