@@ -1,6 +1,18 @@
 git
 ===
 
+### How to modify a specified commit?
+
+If you want to edit `<sha>`:
+
+    git rebase -i <sha>^
+    # change "pick" to "edit" for <sha>, save
+    # <do edits>
+    git commit -v --amend --no-edit # uses same commit message as before
+    git rebase --continue
+
+src: https://stackoverflow.com/questions/1186535/how-to-modify-a-specified-commit
+
 ### Ignore whitespace when comparing lines
 
     git diff -w
