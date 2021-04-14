@@ -8,6 +8,7 @@ If you want to edit `<sha>`:
     git rebase -i <sha>^
     # change "pick" to "edit" for <sha>, save
     # <do edits>
+    git add ...
     git commit -v --amend --no-edit # uses same commit message as before
     git rebase --continue
 
