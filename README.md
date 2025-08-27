@@ -1,6 +1,15 @@
 git
 ===
 
+### Squash last X commits together
+
+...and keep all commit messages:
+
+    # X=5 here
+    git reset --soft HEAD~5 && git commit --edit -m"$(git log --format=%B --reverse HEAD..HEAD@{1})"
+
+src: [Squash my last X commits together using Git](http://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git/5201642#5201642)
+
 ### How to modify a specified commit?
 
 If you want to edit `<sha>`:
