@@ -1,7 +1,10 @@
 git
 ===
 
-https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+### Links
+
+* "A Note About Git Commit Messages" https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+* "A Branch in Time (a story about revision histories)" https://tekin.co.uk/2019/02/a-talk-about-revision-histories
 
 ### Squash last X commits together
 
