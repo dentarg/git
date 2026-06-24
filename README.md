@@ -1,6 +1,8 @@
 git
 ===
 
+https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+
 ### Squash last X commits together
 
 ...and keep all commit messages:
